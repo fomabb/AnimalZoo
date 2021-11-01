@@ -12,5 +12,8 @@ public class Zoo {
         animals.add("Енот");
         animals.add("Носорог");
         animals.add("Зубр");
+
+        System.out.println("В нашем зоопарке на сегоняшний день " + animals.size() + " животных");
+        System.out.println("Это наши люьимые: " + animals);
     }
 }
