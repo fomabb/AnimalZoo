@@ -12,6 +12,7 @@ public class Main {
         Giraffe giraffe = new Giraffe();
         Raccoon raccoon = new Raccoon();
         Rhinoceros rhinoceros = new Rhinoceros();
+        Bison bison = new Bison();
 
         System.out.println("ДОБРО ПОЖАЛОВАТЬ В НАШ ЗООПАРК!;)");
         System.out.println("________________________________________________________");
@@ -26,7 +27,8 @@ public class Main {
         raccoon.age();
         rhinoceros.name();
         rhinoceros.age();
-
+        bison.name();
+        bison.age();
 
         System.out.println("Сегодня  можно покормить питомцев зоопарка\n");
 
@@ -56,6 +58,10 @@ public class Main {
 
                 case 4:
                     rhinoceros.feed();
+                    continue;
+
+                case 5:
+                    bison.feed();
                     continue;
 
                 case 0:
