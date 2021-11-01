@@ -9,14 +9,20 @@ public class Main {
 
         Zoo zoo = new Zoo();
         Wolf wolf = new Wolf();
+        Giraffe giraffe = new Giraffe();
+        Raccoon raccoon = new Raccoon();
 
         System.out.println("ДОБРО ПОЖАЛОВАТЬ В НАШ ЗООПАРК!;)");
         System.out.println("________________________________________________________");
         zoo.zoo();
         System.out.println();
 
+        giraffe.name();
+        giraffe.age();
         wolf.name();
         wolf.age();
+        raccoon.name();
+        raccoon.age();
 
         System.out.println("Сегодня  можно покормить питомцев зоопарка\n");
 
@@ -34,6 +40,14 @@ public class Main {
             switch (feed) {
                 case 1:
                     wolf.feed();
+                    continue;
+
+                case 2:
+                    giraffe.feed();
+                    continue;
+
+                case 3:
+                    raccoon.feed();
                     continue;
 
                 case 0:
