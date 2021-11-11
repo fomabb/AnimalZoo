@@ -38,11 +38,6 @@ public class Main {
 
             feed = scanner.nextInt();
 
-            if (feed >= 6) {
-                System.out.println("Будь внимательнее, такой команды нет ¯\\_(ツ)_/¯\n");
-                continue;
-            }
-
             switch (feed) {
                 case 1:
                     wolf.feed();
@@ -62,6 +57,10 @@ public class Main {
 
                 case 5:
                     bison.feed();
+                    continue;
+
+                default:
+                    System.out.println("Будь внимательнее, такой команды нет ¯\\_(ツ)_/¯\n");
                     continue;
 
                 case 0:
